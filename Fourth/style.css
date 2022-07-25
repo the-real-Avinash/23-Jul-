@@ -1,0 +1,46 @@
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: rgb(130, 158, 196);
+  }
+  
+  .container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 100px;
+    background-color: orange;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .container h3 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 20px;
+    background: orange;
+    text-align: center;
+    color: antiquewhite;
+  }
+  
+  #joke {
+    background-color: orange;
+    font-size: 20px;
+    margin: 7px;
+  }
+  
+  #jokebtn {
+    background: rgb(79, 189, 216);
+    padding: 10px;
+    border-radius: 10px;
+    text-shadow: 10px;
+    text-align: center;
+    margin: 7px;
+    font-size: 17px;
+  }

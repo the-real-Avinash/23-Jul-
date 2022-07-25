@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Registration Form</h1>
+      </div>
+      <form class="form" id="form">
+        <div class="componet">
+          <label>Full Name</label>
+          <input
+            type="text"
+            id="fname"
+            placeholder="First Name"
+            name="fulname"
+            onkeyup="validateName()"
+          />
+          <input
+            type="text"
+            id="lname"
+            placeholder="Last Name"
+            name="lstname"
+            onkeyup="validateLname()"
+          />
+          <span id="name-error"></span>
+        </div>
+        <div class="componet">
+          <label>Company</label>
+          <input
+            type="text"
+            id="cname"
+            placeholder="Your Company Name"
+            name="comname"
+            onkeyup="validateComp()"
+          />
+          <span id="comp-name"></span>
+        </div>
+        <div class="componet">
+          <label>Email id</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="something@harbinger.com"
+            style="width: 220px"
+          />
+          <span id="email-id"></span>
+        </div>
+        <div class="componet">
+          <label>Contact No.</label>
+          <input
+            type="text"
+            id="phncountry"
+            placeholder="xx"
+            style="width: 30px"
+            name="phncnt"
+            onkeyup="validatePhoneNo()"
+          />
+          <input
+            type="text"
+            id="phnumber"
+            placeholder="xxxxxxxxxx"
+            style="width: 100px"
+            name="phnum"
+            onkeyup="validatePhnnum()"
+          />
+          <span id="phone-number"></span>
+        </div>
+        <div class="componet">
+          <label>Country</label>
+          <select id="country" name="Country">
+            <option value="#">Select One City</option>
+            <option value="india">India</option>
+            <option value="russia">Russia</option>
+            <option value="usa">USA</option>
+          </select>
+        </div>
+        <div class="componet">
+          <label>Gender</label>
+          <input
+            type="radio"
+            id="male"
+            name="mle"
+            value="Male0"
+            onclick="validateGender()"
+          />Male
+          <input
+            type="radio"
+            id="fmale"
+            name="mle"
+            value="Female1"
+            onclick="validateGender()"
+          />Female
+
+          <span id="gendermf"></span>
+        </div>
+
+        <div class="componet">
+          <label>Language</label>
+          <input
+            type="checkbox"
+            id="eng"
+            name="English"
+            value="English"
+            onclick="validateLang()"
+          />English
+          <input
+            type="checkbox"
+            id="mar"
+            name="Marathi"
+            value="Marathi"
+            onclick="validateLang()"
+          />Marathi
+          <input
+            type="checkbox"
+            id="othr"
+            name="Other"
+            value="Other"
+            onclick="validateLang()"
+          />Other
+          <span id="lang"></span>
+        </div>
+        <div class="componet">
+          <label>Comment</label>
+          <input
+            type="text"
+            id="commt"
+            placeholder="Say Hello"
+            style="width: 350px"
+          />
+        </div>
+        <div class="componet">
+          <input
+            type="checkbox"
+            id="terncon"
+            name="TNC"
+            value="TnC"
+            onclick="validateAgree()"
+          />I Agree All Terms & Conditions
+          <span id="tnc"></span>
+        </div>
+
+        <!-- <input type="submit" id="sbmt" value="Register"> -->
+        <button onclick="validateForm()" class="btn btn-primary">
+          Register
+        </button>
+        <span id="submit-error"></span>
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+          crossorigin="anonymous"
+        ></script>
+
+        <script src="script.js"></script>
+      </form>
+    </div>
+  </body>
+</html>
